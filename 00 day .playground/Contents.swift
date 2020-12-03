@@ -48,7 +48,7 @@ for (index ,value) in mixStr.enumerated() {
     print("\(index) \(value)")
 }
 
-if let index = mixStr.index(of: "很") {
+if let index = mixStr.firstIndex(of: "很") {
     mixStr.insert(contentsOf: "4.0", at: index)
 }
 
