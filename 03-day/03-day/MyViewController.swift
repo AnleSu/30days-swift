@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  MyViewController.swift
 //  03-day
 //
-//  Created by Anlesu on 2020/12/4.
+//  Created by Anlesu on 2020/12/7.
 //
 
 import UIKit
 
-class ViewController: UIViewController, UITextViewDelegate {
+class MyViewController: UIViewController, UITextViewDelegate {
     
     var limitTextView: UITextView!
     var submmitBtn: UIButton!
@@ -20,17 +20,18 @@ class ViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.white
-     
+       
         initNavigator()
         initSubView()
     }
     
     func initNavigator() -> Void {
+        self.navigationItem.title = "我的title"
+        self.navigationController?.navigationBar.barTintColor = UIColor.gray
+        self.navigationController?.navigationBar.isTranslucent = false
         let rightItem = UIBarButtonItem(title: "clear", style: .plain, target: self, action: #selector(clearTextView))
-
         self.navigationItem.rightBarButtonItem = rightItem
-       
+      
     }
     
     func initSubView() ->  Void {
@@ -64,4 +65,5 @@ class ViewController: UIViewController, UITextViewDelegate {
 
 
 }
+
 
