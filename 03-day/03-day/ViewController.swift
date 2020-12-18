@@ -15,22 +15,23 @@ class ViewController: UIViewController, UITextViewDelegate {
     var limitCount = 50
     @objc func clearTextView() {
         limitTextView.text = ""
-        limitLabel.text = ""
+        limitLabel.text = "0"
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
      
-        initNavigator()
+        
         initSubView()
     }
     
-    func initNavigator() -> Void {
-        let rightItem = UIBarButtonItem(title: "clear", style: .plain, target: self, action: #selector(clearTextView))
-
-        self.navigationItem.rightBarButtonItem = rightItem
-       
+    func initClearButton() -> Void {
+        let clearBtn = UIButton(frame: CGRect(x: self.limitTextView.frame.maxX - 80, y: self.limitTextView.frame.maxY, width: 80, height: 40))
+        clearBtn.setTitle("Clear", for: .normal)
+        clearBtn.setTitleColor(UIColor.black, for: .normal)
+        clearBtn.addTarget(self, action: #selector(clearTextView), for: .touchUpInside)
+        self.view.addSubview(clearBtn)
     }
     
     func initSubView() ->  Void {
@@ -44,6 +45,8 @@ class ViewController: UIViewController, UITextViewDelegate {
         limitLabel.font = UIFont.systemFont(ofSize: 12)
         limitLabel.text = "50"
         self.view.addSubview(limitLabel)
+        
+        initClearButton()
     }
     
     func textViewDidChange(_ textView: UITextView) {
