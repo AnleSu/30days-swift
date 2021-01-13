@@ -73,7 +73,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             return removedMard
         }
         
-        // Add mark
+        // Add mark 这里只适用于Swift代码
         let rgb = Converter().rgb(hex: hex)
         let literal = "#colorLiteral(red: \(rgb.r/255), green: \(rgb.g/255), blue: \(rgb.b/255), alpha: 1.0)"
         return line.appending(" // color: \(name)").appending(" \(literal)")

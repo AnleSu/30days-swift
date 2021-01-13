@@ -7,17 +7,21 @@
 
 import Foundation
 
+/**
+ *这个struct里 主要做了一些色值的换算  看不懂没关系 我也看不懂~~
+ */
 struct Converter {
     func hsl(hex: String) -> HSL {
         return hsl(rgb: rgb(hex: hex))
     }
-    
+    //十六进制色值转RGB
     func rgb(hex: String) -> RGB {
         let r = decimal(string: hex, from: 0, length: 2)
         let g = decimal(string: hex, from: 2, length: 2)
         let b = decimal(string: hex, from: 4, length: 2)
         return RGB(r: r, g: g, b: b)
     }
+    //RGB转HSL
     func hsl(rgb: RGB) -> HSL {
         let r = rgb.r / 255
         let g = rgb.g / 255
