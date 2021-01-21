@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE65B83725B91A2F003CFE36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65B83625B91A2F003CFE36 /* AppDelegate.swift */; };
+		AE65B83925B91A2F003CFE36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65B83825B91A2F003CFE36 /* ViewController.swift */; };
+		AE65B83B25B91A31003CFE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE65B83A25B91A31003CFE36 /* Assets.xcassets */; };
+		AE65B83E25B91A31003CFE36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE65B83C25B91A31003CFE36 /* Main.storyboard */; };
+		AE65B84E25B91A4B003CFE36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE65B84D25B91A4B003CFE36 /* Cocoa.framework */; };
+		AE65B85325B91A4B003CFE36 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65B85225B91A4B003CFE36 /* SourceEditorExtension.swift */; };
+		AE65B85525B91A4B003CFE36 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE65B85425B91A4B003CFE36 /* SourceEditorCommand.swift */; };
+		AE65B85A25B91A4B003CFE36 /* DeleteEmptyLines.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE65B84B25B91A4B003CFE36 /* DeleteEmptyLines.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE65B86325B92E8D003CFE36 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE65B84F25B91A4B003CFE36 /* XcodeKit.framework */; };
+		AE65B86425B92E8D003CFE36 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE65B84F25B91A4B003CFE36 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE65B85825B91A4B003CFE36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE65B82B25B91A2F003CFE36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE65B84A25B91A4B003CFE36;
+			remoteInfo = DeleteEmptyLines;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE65B85E25B91A4B003CFE36 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE65B85A25B91A4B003CFE36 /* DeleteEmptyLines.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65B86525B92E8D003CFE36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE65B86425B92E8D003CFE36 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE65B83325B91A2F003CFE36 /* DeleteEmptyLinesExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleteEmptyLinesExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE65B83625B91A2F003CFE36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE65B83825B91A2F003CFE36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE65B83A25B91A31003CFE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE65B83D25B91A31003CFE36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE65B83F25B91A31003CFE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE65B84025B91A31003CFE36 /* DeleteEmptyLinesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeleteEmptyLinesExtension.entitlements; sourceTree = "<group>"; };
+		AE65B84B25B91A4B003CFE36 /* DeleteEmptyLines.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DeleteEmptyLines.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE65B84D25B91A4B003CFE36 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AE65B84F25B91A4B003CFE36 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		AE65B85225B91A4B003CFE36 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		AE65B85425B91A4B003CFE36 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		AE65B85625B91A4B003CFE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE65B85725B91A4B003CFE36 /* DeleteEmptyLines.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeleteEmptyLines.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE65B83025B91A2F003CFE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65B84825B91A4B003CFE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE65B84E25B91A4B003CFE36 /* Cocoa.framework in Frameworks */,
+				AE65B86325B92E8D003CFE36 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE65B82A25B91A2F003CFE36 = {
+			isa = PBXGroup;
+			children = (
+				AE65B83525B91A2F003CFE36 /* DeleteEmptyLinesExtension */,
+				AE65B85125B91A4B003CFE36 /* DeleteEmptyLines */,
+				AE65B84C25B91A4B003CFE36 /* Frameworks */,
+				AE65B83425B91A2F003CFE36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE65B83425B91A2F003CFE36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE65B83325B91A2F003CFE36 /* DeleteEmptyLinesExtension.app */,
+				AE65B84B25B91A4B003CFE36 /* DeleteEmptyLines.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE65B83525B91A2F003CFE36 /* DeleteEmptyLinesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AE65B83625B91A2F003CFE36 /* AppDelegate.swift */,
+				AE65B83825B91A2F003CFE36 /* ViewController.swift */,
+				AE65B83A25B91A31003CFE36 /* Assets.xcassets */,
+				AE65B83C25B91A31003CFE36 /* Main.storyboard */,
+				AE65B83F25B91A31003CFE36 /* Info.plist */,
+				AE65B84025B91A31003CFE36 /* DeleteEmptyLinesExtension.entitlements */,
+			);
+			path = DeleteEmptyLinesExtension;
+			sourceTree = "<group>";
+		};
+		AE65B84C25B91A4B003CFE36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE65B84D25B91A4B003CFE36 /* Cocoa.framework */,
+				AE65B84F25B91A4B003CFE36 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE65B85125B91A4B003CFE36 /* DeleteEmptyLines */ = {
+			isa = PBXGroup;
+			children = (
+				AE65B85225B91A4B003CFE36 /* SourceEditorExtension.swift */,
+				AE65B85425B91A4B003CFE36 /* SourceEditorCommand.swift */,
+				AE65B85625B91A4B003CFE36 /* Info.plist */,
+				AE65B85725B91A4B003CFE36 /* DeleteEmptyLines.entitlements */,
+			);
+			path = DeleteEmptyLines;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE65B83225B91A2F003CFE36 /* DeleteEmptyLinesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE65B84325B91A31003CFE36 /* Build configuration list for PBXNativeTarget "DeleteEmptyLinesExtension" */;
+			buildPhases = (
+				AE65B82F25B91A2F003CFE36 /* Sources */,
+				AE65B83025B91A2F003CFE36 /* Frameworks */,
+				AE65B83125B91A2F003CFE36 /* Resources */,
+				AE65B85E25B91A4B003CFE36 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE65B85925B91A4B003CFE36 /* PBXTargetDependency */,
+			);
+			name = DeleteEmptyLinesExtension;
+			productName = DeleteEmptyLinesExtension;
+			productReference = AE65B83325B91A2F003CFE36 /* DeleteEmptyLinesExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE65B84A25B91A4B003CFE36 /* DeleteEmptyLines */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE65B85B25B91A4B003CFE36 /* Build configuration list for PBXNativeTarget "DeleteEmptyLines" */;
+			buildPhases = (
+				AE65B84725B91A4B003CFE36 /* Sources */,
+				AE65B84825B91A4B003CFE36 /* Frameworks */,
+				AE65B84925B91A4B003CFE36 /* Resources */,
+				AE65B86525B92E8D003CFE36 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeleteEmptyLines;
+			productName = DeleteEmptyLines;
+			productReference = AE65B84B25B91A4B003CFE36 /* DeleteEmptyLines.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE65B82B25B91A2F003CFE36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AE65B83225B91A2F003CFE36 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AE65B84A25B91A4B003CFE36 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = AE65B82E25B91A2F003CFE36 /* Build configuration list for PBXProject "DeleteEmptyLinesExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE65B82A25B91A2F003CFE36;
+			productRefGroup = AE65B83425B91A2F003CFE36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE65B83225B91A2F003CFE36 /* DeleteEmptyLinesExtension */,
+				AE65B84A25B91A4B003CFE36 /* DeleteEmptyLines */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE65B83125B91A2F003CFE36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE65B83B25B91A31003CFE36 /* Assets.xcassets in Resources */,
+				AE65B83E25B91A31003CFE36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65B84925B91A4B003CFE36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE65B82F25B91A2F003CFE36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE65B83925B91A2F003CFE36 /* ViewController.swift in Sources */,
+				AE65B83725B91A2F003CFE36 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE65B84725B91A4B003CFE36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE65B85325B91A4B003CFE36 /* SourceEditorExtension.swift in Sources */,
+				AE65B85525B91A4B003CFE36 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE65B85925B91A4B003CFE36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE65B84A25B91A4B003CFE36 /* DeleteEmptyLines */;
+			targetProxy = AE65B85825B91A4B003CFE36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE65B83C25B91A31003CFE36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE65B83D25B91A31003CFE36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE65B84125B91A31003CFE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE65B84225B91A31003CFE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AE65B84425B91A31003CFE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeleteEmptyLinesExtension/DeleteEmptyLinesExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TG89PN27R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DeleteEmptyLinesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.DeleteEmptyLinesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE65B84525B91A31003CFE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeleteEmptyLinesExtension/DeleteEmptyLinesExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TG89PN27R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DeleteEmptyLinesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.DeleteEmptyLinesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE65B85C25B91A4B003CFE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeleteEmptyLines/DeleteEmptyLines.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TG89PN27R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DeleteEmptyLines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.DeleteEmptyLinesExtension.DeleteEmptyLines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE65B85D25B91A4B003CFE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DeleteEmptyLines/DeleteEmptyLines.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 2TG89PN27R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = DeleteEmptyLines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sal.DeleteEmptyLinesExtension.DeleteEmptyLines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE65B82E25B91A2F003CFE36 /* Build configuration list for PBXProject "DeleteEmptyLinesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE65B84125B91A31003CFE36 /* Debug */,
+				AE65B84225B91A31003CFE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE65B84325B91A31003CFE36 /* Build configuration list for PBXNativeTarget "DeleteEmptyLinesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE65B84425B91A31003CFE36 /* Debug */,
+				AE65B84525B91A31003CFE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE65B85B25B91A4B003CFE36 /* Build configuration list for PBXNativeTarget "DeleteEmptyLines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE65B85C25B91A4B003CFE36 /* Debug */,
+				AE65B85D25B91A4B003CFE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE65B82B25B91A2F003CFE36 /* Project object */;
+}
