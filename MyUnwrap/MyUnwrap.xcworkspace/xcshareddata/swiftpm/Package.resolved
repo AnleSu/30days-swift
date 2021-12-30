@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DZNEmptyDataSet",
+        "repositoryURL": "https://gitee.com/anlesu/DZNEmptyDataSet.git",
+        "state": {
+          "branch": "master",
+          "revision": "9bffa69a83a9fa58a14b3cf43cb6dd8a63774179",
+          "version": null
+        }
+      },
+      {
+        "package": "MKRingProgressView",
+        "repositoryURL": "https://gitee.com/anlesu/MKRingProgressView.git",
+        "state": {
+          "branch": "master",
+          "revision": "660888aab1d2ab0ed7eb9eb53caec12af4955fa7",
+          "version": null
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://gitee.com/anlesu/SDWebImage.git",
+        "state": {
+          "branch": "master",
+          "revision": "602af15947106c9c7a6066138b4e907df91c8acb",
+          "version": null
+        }
+      },
+      {
+        "package": "Sourceful",
+        "repositoryURL": "https://gitee.com/anlesu/Sourceful.git",
+        "state": {
+          "branch": "main",
+          "revision": "04f7e85900451ebdc34345ee19bb0139f05f3a01",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftEntryKit",
+        "repositoryURL": "https://gitee.com/anlesu/SwiftEntryKit.git",
+        "state": {
+          "branch": "master",
+          "revision": "5ad36cccf0c4b9fea32f4e9b17a8e38f07563ef0",
+          "version": null
+        }
+      },
+      {
+        "package": "Zephyr",
+        "repositoryURL": "https://gitee.com/anlesu/Zephyr.git",
+        "state": {
+          "branch": "master",
+          "revision": "cc714478f45135a205c4289cedc46c8e55401a1e",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

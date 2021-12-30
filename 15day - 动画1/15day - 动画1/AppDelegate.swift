@@ -11,7 +11,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    /**
+     *iOS13之后，Appdelegate不在负责UI生命周期，只负责app的生命周期，所有
+     *生命周期交给SceneDelegate处理。
+     *所以在didFinishLaunchingWithOptions中修改window.rootViewController 无效
+     */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

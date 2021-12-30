@@ -18,6 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         self.myCollectionView.backgroundColor = UIColor.white
         self.myCollectionView.reloadData()
     }
+    
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
