@@ -6,7 +6,13 @@ import Cocoa
 //
 ////var name:String
 ////print(name) //Variable 'name' used before being initialized
-//
+//可选值类型
+var obj1:Int? = 1
+var obj2:Int? = 2
+//if-let语法结构来进行optional类型值的绑定操作
+if let tmp1 = obj1, let tmp2 = obj2, tmp1 < tmp2 {
+print(tmp1, tmp2)
+    }
 //// 这是单行注释
 //
 ///*
@@ -20,6 +26,26 @@ import Cocoa
 //code
 //多行套用注释，外部 */
 //
+var str:String = "hello"
+str = ""
+str = String()
+str = String("hello")
+str = String(666)
+str = String(0.1)
+str = String("a")//通过字符构造
+str = String(true)
+str = String(describing: (1, 1, "hh"))//通过元祖构造
+str = String(format: "hh%@", "jj")//通过格式化字符串构造
+var d = "hello \(123)"
+var c = "hello \(d)"
+
+
+MemoryLayout<String>.size
+MemoryLayout<Character>.size
+MemoryLayout<UInt>.size
+MemoryLayout<Float>.size
+MemoryLayout<Double>.size
+MemoryLayout<Bool>.size
 ///** +、+=， 拼合字符串 **/
 //var name:String = "You" + "Hua"         // name is YouHua
 //name += " Jiang"                        // name is YouHua Jiang
@@ -163,6 +189,36 @@ import Cocoa
 //    // Prints ["Ewa", "Daniella", "Chris", "Barry", "Alex"]
 //
 
+//func myFunc(param1: Int, param2: Int = 2, param3: Int = 1) {
+//    param3 + param2 + param1
+//}
+//myFunc(param1: 3)
+//
+//func myFunc2(params1: Int... , params2: String...) {
+//    var sum = 0;
+//    for count in params1 {
+//        sum += count
+//    }
+//    for temp in params2 {
+//        print(temp)
+//    }
+//}
+//myFunc2(params1: 1,2,3,4, params2: "h","hh","jjj")
+
+//var set1: Set<Int> = [1, 2, 3, 5]
+//var setIndex = set1.index(after: set1.startIndex)
+//set1.remove(at: setIndex)
+
+//闭包
+let myClosures = {(param: Int) -> Int in
+    return param * param
+}
+
+myClosures(3)
+
+var a:Dictionary<String,String> = ["a":"A","b":"B","c":"C"]
+a.updateValue("d", forKey: "d")
+a
 enum Name{
     case first(String)
     case last(String)

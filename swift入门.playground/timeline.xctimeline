@@ -2,5 +2,15 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/beibi/30days-swift/swift%E5%85%A5%E9%97%A8.playground#CharacterRangeLen=1&amp;CharacterRangeLoc=6231&amp;EndingColumnNumber=0&amp;EndingLineNumber=221&amp;StartingColumnNumber=1&amp;StartingLineNumber=220&amp;Timestamp=676955139.875955"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/beibi/30days-swift/swift%E5%85%A5%E9%97%A8.playground#CharacterRangeLen=3&amp;CharacterRangeLoc=5796&amp;EndingColumnNumber=14&amp;EndingLineNumber=199&amp;StartingColumnNumber=11&amp;StartingLineNumber=199&amp;Timestamp=676955139.876121"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>
